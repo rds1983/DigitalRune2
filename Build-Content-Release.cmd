@@ -15,21 +15,6 @@ mgcb /@:DigitalRune.Graphics.mgcb || GOTO error
 cd ..\..
 
 ECHO.
-ECHO ----- Building DigitalRune.Editor.Game.Content...
-
-:: Change working directory.
-cd Source\DigitalRune.Editor.Game.Content
-
-:: Build content with MonoGame Content Builder tool.
-mgcb /@:DigitalRune.Editor.Game-Release.mgcb || GOTO error
-
-:: ZIP content.
-..\..\Tools\Pack\bin\Release\net8.0-windows\Pack.exe --output bin\DigitalRune.Editor.Game.zip --recursive --directory bin *.* || GOTO error
-
-cd ..\..
-
-
-ECHO.
 ECHO SUCCESS - Content build successful.
 PAUSE
 EXIT
