@@ -8,8 +8,8 @@ So far it works only under Windows.
 ## Build Instructions
 
 1. Install mgcb if it's not installed: `dotnet tool install dotnet-mgcb --global`
-2. Open DigitalRune-MonoGame-Windows.sln in the IDE and build Release version. All projects but Samples.MonoGame.DirectX should build succesfully.
-3. Execute Build-Content-Release.cmd
-4. Goto 'Samples' folder and execute Build-Content-MonoGame-Windows.cmd
-5. Build the solution in the IDE again and this time Samples.MonoGame.DirectX should build succesfully
-6. Run Samples.MonoGame.DirectX
+2. Open `DigitalRune-MonoGame-Windows.sln` in the IDE and build Release version. All projects but `Samples.MonoGame.DirectX` should build succesfully
+3. Execute `Build-Content-Release.cmd`
+4. Goto `Samples` folder and execute `Build-Content-MonoGame-Windows.cmd`
+5. Build the solution in the IDE again and this time `Samples.MonoGame.DirectX` should build succesfully
+6. Run `Samples.MonoGame.DirectX`
