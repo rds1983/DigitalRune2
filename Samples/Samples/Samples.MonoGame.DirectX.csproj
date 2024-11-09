@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Samples</AssemblyName>
+	<DefineConstants>WINDOWS;MONOGAME;DIGITALRUNE_PROFILE</DefineConstants>
+    <OutputType>WinExe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Platforms\**" />
+    <EmbeddedResource Remove="Platforms\**" />
+    <None Remove="Platforms\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Shared GameObjects\SmoothCameraObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Source\DigitalRune.Graphics.Content\bin\DigitalRune.zip" Link="Content\DigitalRune.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Content\bin\MonoGame\Windows\Content.zip" Link="Content\Content.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\DigitalRune.Animation\DigitalRune.Animation.MonoGame.csproj" />
+    <ProjectReference Include="..\..\Source\DigitalRune.Game.UI\DigitalRune.Game.UI.MonoGame.csproj" />
+    <ProjectReference Include="..\..\Source\DigitalRune.Graphics\DigitalRune.Graphics.MonoGame.DirectX.csproj" />
+    <ProjectReference Include="..\..\Source\DigitalRune.Physics.Specialized\DigitalRune.Physics.Specialized.MonoGame.csproj" />
+    <ProjectReference Include="..\..\Source\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation.csproj" />
+  </ItemGroup>
+</Project>

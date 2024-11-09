@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DigitalRune.Graphics</AssemblyName>
+	<DefineConstants>WINDOWS;MONOGAME;ANIMATION;PARTICLES</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>bin\MonoGame.DirectX\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="$(MonoGameVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalRune.Animation\DigitalRune.Animation.MonoGame.csproj" />
+    <ProjectReference Include="..\DigitalRune.Particles\DigitalRune.Particles.MonoGame.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DigitalRune.Graphics.Content.Pipeline</AssemblyName>
+	<DefineConstants>ANIMATION;PARTICLES;MONOGAME</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <OutputPath>bin\MonoGame.DirectX\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.Content.Pipeline" Version="$(MonoGameVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalRune.Graphics\DigitalRune.Graphics.MonoGame.DirectX.csproj" />
+  </ItemGroup>
+</Project>

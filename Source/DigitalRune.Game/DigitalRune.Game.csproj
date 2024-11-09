@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	<DefineConstants>PORTABLE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalRune\DigitalRune.csproj" />
+  </ItemGroup>
+</Project>

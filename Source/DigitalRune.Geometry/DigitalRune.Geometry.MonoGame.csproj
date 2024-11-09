@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DigitalRune.Geometry</AssemblyName>
+	<DefineConstants>PORTABLE;MONOGAME;POOL_ENUMERABLES</DefineConstants>
+    <OutputPath>bin\MonoGame\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" PrivateAssets="All" Version="$(MonoGameVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics.MonoGame.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DigitalRune.Physics.Specialized</AssemblyName>
+	<DefineConstants>PORTABLE;MONOGAME</DefineConstants>
+    <OutputPath>bin\MonoGame\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" PrivateAssets="All" Version="$(MonoGameVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalRune.Animation\DigitalRune.Animation.MonoGame.csproj" />
+    <ProjectReference Include="..\DigitalRune.Physics\DigitalRune.Physics.MonoGame.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DigitalRune</AssemblyName>
+	<DefineConstants>WINDOWS;DLL_PROJECT;DOTNET;DIGITALRUNE;AESCRYPTO</DefineConstants>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Ionic\**" />
+    <EmbeddedResource Remove="Ionic\**" />
+    <None Remove="Ionic\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.ServiceModel.Primitives" Version="8.0.0" />
+    <PackageReference Include="DotNetZip" Version="1.16.0" />
+  </ItemGroup>
+</Project>
