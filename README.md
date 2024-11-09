@@ -13,3 +13,4 @@ So far it works only under Windows.
 4. Goto `Samples` folder and execute `Build-Content-MonoGame-Windows.cmd`
 5. Build the solution in the IDE again and this time `Samples.MonoGame.DirectX` should build succesfully
 6. Run `Samples.MonoGame.DirectX`
+7. Use PgUP/PgDown to switch between samples
