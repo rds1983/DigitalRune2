@@ -7,10 +7,11 @@ So far it works only under Windows.
 
 ## Build Instructions
 
-1. Install mgcb if it's not installed: `dotnet tool install dotnet-mgcb --global`
-2. Open `DigitalRune-MonoGame-Windows.sln` in the IDE and build Release version. All projects but `Samples.MonoGame.DirectX` should build succesfully
-3. Execute `Build-Content-Release.cmd`
-4. Goto `Samples` folder and execute `Build-Content-MonoGame-Windows.cmd`
-5. Build the solution in the IDE again and this time `Samples.MonoGame.DirectX` should build succesfully
-6. Run `Samples.MonoGame.DirectX`
-7. Use PgUP/PgDown to switch between samples
+1. Clone this repo
+2. Install mgcb if it's not installed: `dotnet tool install dotnet-mgcb --global`
+3. Open `DigitalRune-MonoGame-Windows.sln` in the IDE and build Release version. All projects but `Samples.MonoGame.DirectX` should build succesfully
+4. Execute `Build-Content-Release.cmd`
+5. Goto `Samples` folder and execute `Build-Content-MonoGame-Windows.cmd`
+6. Build the solution in the IDE again and this time `Samples.MonoGame.DirectX` should build succesfully
+7. Run `Samples.MonoGame.DirectX`
+8. Use PgUP/PgDown to switch between samples
