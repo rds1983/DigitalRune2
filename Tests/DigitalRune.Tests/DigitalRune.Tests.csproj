@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DigitalRune.Tests</RootNamespace>
+    <AssemblyName>DigitalRune.Tests</AssemblyName>
+    <DefineConstants>$(DefineConstants);MONOGAME</DefineConstants>
+    <OutputPath>bin\MonoGame\$(Configuration)</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="$(NUnitVersion)" />
+    <PackageReference Include="NUnit3TestAdapter" Version="$(NUnit3TestAdapterVersion)" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MNTestSdkVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation.csproj" />
+    <ProjectReference Include="..\NUnit.Utils\NUnit.Utils.csproj" />
+  </ItemGroup>  
+</Project>

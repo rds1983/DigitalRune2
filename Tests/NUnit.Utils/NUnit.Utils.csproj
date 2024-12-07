@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>NUnit.Utils</AssemblyName>
+    <PackageId>NUnit.Utils</PackageId>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="$(NUnitVersion)" />
+    <PackageReference Include="System.Reactive" Version="$(ReactiveVersion)" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\DigitalRune\DigitalRune.csproj" />
+  </ItemGroup>  
+</Project>
