@@ -63,6 +63,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalRune.Mathematics.Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalRune.Geometry.Tests", "Tests\DigitalRune.Geometry.Tests\DigitalRune.Geometry.Tests.csproj", "{F6796D24-7E1D-404E-829C-1F81E770CFCD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitalRune.Graphics.Tests", "Tests\DigitalRune.Graphics.Tests\DigitalRune.Graphics.Tests.csproj", "{BD3A6ABA-15B4-4B98-BEE6-1DE2FF1725DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -173,6 +175,10 @@ Global
 		{F6796D24-7E1D-404E-829C-1F81E770CFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6796D24-7E1D-404E-829C-1F81E770CFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6796D24-7E1D-404E-829C-1F81E770CFCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3A6ABA-15B4-4B98-BEE6-1DE2FF1725DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3A6ABA-15B4-4B98-BEE6-1DE2FF1725DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3A6ABA-15B4-4B98-BEE6-1DE2FF1725DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3A6ABA-15B4-4B98-BEE6-1DE2FF1725DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -203,6 +209,7 @@ Global
 		{F1DE17B3-D922-4EC7-AF49-4D04B775A08B} = {F69C109F-5F7A-4CA6-A5C9-5F1F20E04C47}
 		{4D4E612A-BB6B-4370-A8E3-A4F986007E77} = {F69C109F-5F7A-4CA6-A5C9-5F1F20E04C47}
 		{F6796D24-7E1D-404E-829C-1F81E770CFCD} = {F69C109F-5F7A-4CA6-A5C9-5F1F20E04C47}
+		{BD3A6ABA-15B4-4B98-BEE6-1DE2FF1725DC} = {F69C109F-5F7A-4CA6-A5C9-5F1F20E04C47}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C79735B-33BE-4B57-B2C6-BF09D4DEC516}

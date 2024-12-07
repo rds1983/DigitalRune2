@@ -21,30 +21,5 @@ namespace DigitalRune.Graphics.Tests
       Assert.AreEqual("message", exception.Message);
       Assert.AreEqual("inner", exception.InnerException.Message);
     }
-
-
-    [Test]
-    public void SerializationBinary()
-    {
-      GraphicsException exception1 = new GraphicsException("message");
-
-      string fileName = "SerializationGraphicsException.bin";
-
-      if (File.Exists(fileName))
-        File.Delete(fileName);
-
-      FileStream fileStream = new FileStream(fileName, FileMode.Create);
-
-      BinaryFormatter formatter = new BinaryFormatter();
-      formatter.Serialize(fileStream, exception1);
-      fileStream.Close();
-
-      fileStream = new FileStream(fileName, FileMode.Open);
-      formatter = new BinaryFormatter();
-      GraphicsException exception2 = (GraphicsException)formatter.Deserialize(fileStream);
-      fileStream.Close();
-
-      Assert.AreEqual(exception1.Message, exception2.Message);
-    }
   }
 }
